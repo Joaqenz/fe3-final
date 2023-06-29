@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import cardImage from "../assets/doctor.jpg";
+import cardImage from "/images/doctor.jpg";
 import { isItemExists } from "../Context/dentistContext";
 import { useDentist } from "../Context/dentistContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -1,5 +1,5 @@
 import React from 'react'
-import dhLogo from '../assets/dh.png'
+import dhLogo from '/images/DH.png'
 const Footer = () => {
   return (
     <footer>
