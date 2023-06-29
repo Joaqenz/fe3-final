@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  transition: background-color 0.1s;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  font-size: 1rem;
+}
+
+body{
+  margin: 0;
+}
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+
+.App{
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 0px 5vw;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border: 0px solid transparent;
+  font-size: 1em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.switchButton{
+  height: 100%;
+  aspect-ratio: 1/1;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.18s ease-in-out;
+}
+.switchButton:hover{
+  transform: translateY(-3px);
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.link{
+  font-weight:500;
+}
+.links a{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transition: transform 0.1s ease;
+}
+
+.links a:hover{
+  transform: translateY(-3px);
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px;
+}
+.navbar .title{
+  display: flex;
+  margin: 0;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.card-grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 260px);
+  justify-content: space-between;
+  grid-gap: 40px;
+}
+
+.card{
+  max-width: 260px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img{
+  width: 100%;
+}
+.favButton{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  height: 40px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.favButton .icon{
+  height: 25px;
+}

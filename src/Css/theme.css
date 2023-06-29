@@ -1,0 +1,72 @@
+/* Light Theme */
+
+/* Variables */
+.light{
+    --lg--text: #071212;
+    --lg--background: #d6effa;
+    --lg--primary:#b7ccdc;
+    --lg--secondary:#e0e5f6;
+    --lg--accent:#c4cfed;
+}
+/* Componentes */
+.light .App {
+    color: var(--lg--text);
+    background-color: var(--lg--background);
+}
+.light .links a.active div{
+    border-bottom: solid 2px var(--lg--text);
+}
+.light .switchButton{
+    background-color: var(--lg--primary);
+    color: var(--lg--text);
+}
+.light .switchButton:hover{
+    box-shadow: 0px 8px 15px 0px var(--lg--primary);
+}
+.light .navbar .links .link{
+    color: var(--lg--text);
+}
+.light .card{
+  background-color: white;
+
+}
+.light .cardText {
+    color: var(--lg--text);
+}
+/* --------------------------------------- */
+
+/* Dark Theme */
+
+/* Variables */
+.dark{
+    --dk--text: #f7f5fa;
+    --dk--background: #060709;
+    --dk--primary: #214e73;
+    --dk--secondary: #ddf0fd;
+    --dk--accent: #0a1824;
+}
+/* Components */
+.dark .App {
+    background-color: var(--dk--background);
+    color: var(--dk--text);
+}
+.dark .links a.active div{
+    border-bottom: solid 2px var(--dk--text);
+}
+.dark .switchButton{
+    background-color: var(--dk--primary);
+    color: var(--dk--text);
+}
+
+.dark .switchButton:hover{
+    box-shadow: 0px 8px 15px 0px var(--dk--primary);
+}
+.dark .navbar .links .link{
+    color: var(--dk--text);
+}
+.dark .card{
+    background-color: var(--dk--accent);
+}
+.dark .cardText {
+    color: var(--dk--text);
+}

@@ -1,0 +1,14 @@
+.dark{
+    --text: #d6f5e8;
+    --background: #05140e;
+    --primary: ;
+    --secondary: ;
+    --accent: ;
+}
+.light{
+    --text: #071212;
+    --background: #e9f6f7;
+    --primary:#3e69a3;
+    --secondary:#d8d6f0;
+    --accent:#443ea3;
+}
