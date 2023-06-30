@@ -8,13 +8,10 @@ const Favs = () => {
   const { state } = useDentist();
   return (
     <>
-      <h1>Dentists Favs</h1>
+      <h1 style={{ textAlign:'center' }}>Favoritos</h1>
       <div className="card-grid">
-      {state.favoritesList.map((dentist) => (
-          <Card
-            key={dentist.id}
-            data={dentist}
-          />
+        {state.favoritesList.map((dentist) => (
+          <Card key={dentist.id} data={dentist} />
         ))}
       </div>
     </>

@@ -4,7 +4,7 @@
 .light{
     --lg--text: #071212;
     --lg--background: #d6effa;
-    --lg--primary:#b7ccdc;
+    --lg--primary:#AACEDE;
     --lg--secondary:#e0e5f6;
     --lg--accent:#c4cfed;
 }
@@ -28,10 +28,18 @@
 }
 .light .card{
   background-color: white;
-
 }
 .light .cardText {
     color: var(--lg--text);
+}
+.light form input:focus{
+    outline: solid 1px var(--lg--primary);
+}
+.light .form-container button{
+    background-color: var(--lg--primary);
+}
+.light .detail-profile{
+    background-color: white;
 }
 /* --------------------------------------- */
 
@@ -69,4 +77,14 @@
 }
 .dark .cardText {
     color: var(--dk--text);
+}
+.dark .detail-profile{
+    background-color: var(--dk--accent);
+}
+.dark .contactButton{
+    background-color: var(--dk--primary);
+    color: var(--dk--text);
+}
+.dark form input:focus{
+    outline: solid 1px var(--dk--primary);
 }

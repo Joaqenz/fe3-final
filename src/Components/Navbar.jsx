@@ -2,15 +2,13 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { routes } from "../Utils/routes";
 import SwitchThemeButton from "./SwitchThemeButton";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   const navigate = useNavigate();
   return (
     <nav className="navbar">
-      <div className="title">
-        DH
-      </div>
+      <div className="title" style={{ fontWeight:'bold' }}>DH Consultorio</div>
       <div className="links">
         <NavLink to={routes.home}>
           <div className="link">Home</div>
@@ -22,11 +20,10 @@ const Navbar = () => {
           <div className="link">Favoritos</div>
         </NavLink>
         <button className="switchButton" onClick={() => navigate(-1)}>
-            <FontAwesomeIcon icon={["fas", "arrow-left"]} />
+          <FontAwesomeIcon icon={["fas", "arrow-left"]} />
         </button>
-        <SwitchThemeButton/>
+        <SwitchThemeButton />
       </div>
-          
     </nav>
   );
 };

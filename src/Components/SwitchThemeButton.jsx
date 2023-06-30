@@ -1,17 +1,19 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 import { useTheme } from "../Context/themeContext";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SwitchThemeButton = () => {
-    const { darkMode ,toggleTheme } = useTheme();
-    useEffect(()=>{},[darkMode])
+  const { darkMode, toggleTheme } = useTheme();
+  useEffect(() => {}, [darkMode]);
   return (
-  <button  className="switchButton"  onClick={toggleTheme}>
-    {
-      darkMode ? <FontAwesomeIcon icon={["far", "moon"]} /> : <FontAwesomeIcon icon={["far", "sun"]} />
-    }
-  </button>
-  )
-}
+    <button className="switchButton" onClick={toggleTheme}>
+      {darkMode ? (
+        <FontAwesomeIcon icon={["far", "moon"]} />
+      ) : (
+        <FontAwesomeIcon icon={["far", "sun"]} />
+      )}
+    </button>
+  );
+};
 
-export default SwitchThemeButton
+export default SwitchThemeButton;
